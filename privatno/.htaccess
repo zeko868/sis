@@ -1,0 +1,5 @@
+AuthType Basic
+AuthUserFile D:/xampp/htdocs/sis/privatno/.htpasswd
+AuthName "Admin - Login"
+DirectoryIndex korisnici.php
+Require valid-user

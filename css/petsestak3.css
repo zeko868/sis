@@ -1,0 +1,284 @@
+.sakrij {
+    visibility: hidden;
+    display: none;
+}
+a.disabled {
+    visibility: hidden;
+}
+a.current {
+    border: none !important;
+    background-color: white !important;
+    pointer-events: none;
+    cursor: default;
+}
+table.podtablica {
+    width: 100%;
+    position: relative;
+}
+caption,
+#tablica > tbody > tr > td:first-child,
+.dataTables_paginate {
+    text-align: center;
+}
+.dataTables_paginate {
+    margin-top: 1%;
+    float: none;
+}
+.dataTables_filter {
+    margin-right: 5%;
+}
+.dataTables_filter input {
+    border-radius: 18%;
+    border-color: #3333ff;
+}
+header img#prijavljen-opcije {
+    background-image: orange;
+}
+header img#prijavljen-opcije:active {
+    box-shadow: inset 0 0 10px #000000;
+}
+header img#slika-profila {
+    height: 50px;
+    width: 50px;
+}
+#map {
+    width: 100%;
+}
+div#padajuci-izbornik {
+    margin-left: 2em;
+    width: 5.5em;
+    background-color: orange;
+    display: none;
+    border: white 1px inset;
+    border-radius: 10%;
+}
+div#padajuci-izbornik ul {
+    list-style-type: none;
+    margin: 0 -5em;
+}
+div#padajuci-izbornik ul li {
+    position: relative;
+    width: 50%;
+    margin: 0 auto;
+    height: 1.2em;
+}
+div#padajuci-izbornik ul li:hover {
+    border: 1px solid whitesmoke;
+    color: salmon;
+}
+div#padajuci-izbornik ul a {
+    text-decoration: none;
+    color: brown;
+}
+th.constraint-PRI span#naziv {
+    text-decoration: underline;
+}
+th.constraint-PRI::before {
+    content: url("../img/primary.png");
+}
+th.constraint-UNI span#naziv {
+    font-style: italic;
+}
+th.constraint-UNI::before {
+    content: url("../img/unique.png");
+}
+td.delete::after {
+    content: url("../img/delete.png");
+}
+td.update::after {
+    content: url("../img/update.png");
+}
+td.save::after {
+    content: url("../img/save.png");
+}
+td :input {
+    width: 95%;
+}
+p.navigacija-tipka {
+    border: orange outset 1px;
+    border-radius: 20%;
+    width: 5em;
+    float: left;
+    text-align: center;
+    background: linear-gradient(-135deg, orange, maroon, orange);
+    margin: 0 1%;
+}
+p.navigacija-tipka:hover {
+    color: #3333ff;
+    font-weight: bold;
+}
+div#stranicenje p:not(.navigacija-tipka) {
+    float: left;
+    margin: 0px;
+}
+div#stranicenje-wrapper {
+    margin: 0 auto;
+    width: 60%;
+}
+div#stranicenje {
+    width: 100%;
+}
+div#podatkovna-tablica table {
+    width: 100%;
+    border: black 2px solid;
+    border-collapse: collapse;
+    margin: 1em 0;
+}
+input#broj-stranice {
+    width: 4em;
+    border-radius: 20%;
+}
+div#podatkovna-tablica td  {
+    border: gray thin solid;
+    color: brown;
+}
+
+div#podatkovna-tablica th {
+    border-bottom: gray 2px solid;
+}
+div#podatkovna-tablica th * {
+    color: #994444 !important;
+}
+div#podatkovna-tablica :input {
+    color: orange;
+}
+div#podatkovna-tablica td.save,
+div#podatkovna-tablica td.update,
+div#podatkovna-tablica td.delete {
+    text-align: center;
+    cursor: pointer;
+}
+div#csv-upload table tbody tr:first-child img#podigni,
+div#csv-upload table tbody tr:last-child img#spusti {
+    visibility: hidden;
+}
+td.autoinc {
+    color: gray;
+}
+th,
+td.update,
+td.save,
+td.delete,
+p.navigacija-tipka {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+div#cover {
+    background-image: url("../img/cover.jpg");
+    height: 200px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+body {
+    background-color: sienna;
+    margin: .5% 0;
+}
+
+#tabs, #obrazac-za-unos *, #csv-upload * {
+    color: #662222;
+}
+
+#csv-upload label {
+    width: 200px;
+}
+
+#csv-upload table {
+    border-collapse: collapse;
+    border: 2px solid maroon;
+}
+
+#csv-upload table td  {
+    border: 1px solid orange;
+    border-bottom: 1px solid marron;
+}
+
+#csv-upload table th  {
+    border: 1px solid orange;
+}
+
+* {
+    color: whitesmoke;
+}
+
+table.dataTable * {
+    color: sienna;
+}
+
+.podtablica, .podtablica * {
+    background-color: papayawhip !important;
+}
+
+[id^=exampleTable_] caption, select#popisstranica, input[type=search] {
+    background-color: orange;
+    font-size: 1.25em;
+}
+
+form[action=header\.php] {
+    width: 50%;
+}
+
+select#popisstranica {
+    height: 3%;
+    width: 100%;
+    font-size: 1.5em;
+}
+
+select#popisstranica:hover {
+    box-shadow: inset 0 0 10px #000000;
+}
+
+select#popisstranica:active {
+    background-color: sienna;
+}
+
+::-webkit-input-placeholder, :-ms-input-placeholder {
+    color:    black;
+}
+:-moz-placeholder, ::-moz-placeholder {
+   color:    black;
+   opacity:  1;
+}
+
+form:not([action=header\.php]) label {
+    display: inline-block;
+    width: 100px;
+    text-align: right;
+    margin: 1% 0;
+}
+
+form:not([action=header\.php]) input {
+    color: brown;
+}
+
+form#prijava input, form#registracija input {
+    width: 200px;
+}
+
+p.greska {
+    margin: 0 0;
+    line-height: .5em;
+}
+
+input[type=file] {
+    color: whitesmoke;
+}
+
+div#tabs table td, div#tabs table th, div#tabs table :input {
+    color: sienna;
+}
+
+form[action=rad-s-podacima\.php] select, #filter-atribut {
+    height: 3%;
+    width: 30%;
+    font-size: 1.2em;
+    color: brown;
+}
+
+form[action=rad-s-podacima\.php] select *, #filter-atribut * {
+    color: brown;
+}

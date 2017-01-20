@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>O autoru</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/petsestak3.css">
+    </head>
+    <body>
+        <h2>Opis projektnog zadatka</h2>
+        <p>U zadatku se tražilo kreirati web-aplikaciju koja bi omogućavala uobičajen rad s knjižnicama. Ona je trebala sadržavati osnovne funkcionalnosti poput definiranja ulogu u tom poslovnom sustavu, kao i definiranje odgovarajućih ovlasti svakoj od njih. Tako neregistrirani korisnici (i neaktivirani) imaju pravo samo vidjeti popise knjižnice i najpopularnije knjige u svakoj od njih. Registrirani naravno može vršiti temeljne pogodnosti koje nude knjižnice, a to je posudba (rezervacija) knjiga. Traženi sustav je bio specifičan što je omogućavao da korisnici između sebe mogu također posuđivati knjige što ga je činilo veoma nalik društvenim mrežama (da ne spominjem mogućnosti lajkanja i dislajkanja slika). Moderatora naravno čine knjižničari koji popunjavaju asortiman knjižnice u kojim rade, kao što i posuđuju (i evidentiraju) posudbe knjiga korisnicima. U konačnici, postoji i administrator koji može upravljati nekim sustavskim parametrima, kao i postavljati nove moderatore, odblokirati korisničke račune i ostalo.</p>
+        <h2>Opis projektnog rješenja</h2>
+        <p>U rješenju je postignut zadovoljenje administratorske uloge u potpunosti, dok su omogućene i neke druge funkcije kojima imaju pristup i niži slojevi korisnica (ali za sada samo preko uloge administratora). Naravno, neregistrirani korisnik također ima mogućnost pristupanja svim funkcionalnostima koji su mu u opisu projekta bili namijenjeni.</p>
+        <h2>Link do ERA modela</h2>
+        <a href="img/era.png">link</a>
+        <h2>Popis skripata</h2>
+        <ul>
+            <li>administratorski_parametar.php (služi za dohvaćanje administrativnih parametara)</li>
+            <li>aktivacija.php (služi za aktiviranje korisničkog računa)</li>
+            <li>baza.class.php (služi za rad s bazom podataka)</li>
+            <li>dnevnik.php (služi za upis podataka u dnevnik)</li>
+            <li>footer.php (podnožje koje se nasljeđuje na svim stranicama, a sadrži najčešće Javascript skripte)</li>
+            <li>header.php (zaglavlje koje se nasljeđuje na svim stranicama, a sadrži najčešće navigaciju i CSS stilove)</li>
+            <li>index.php (početna stranica na kojoj se nalazi popis knjižnica i Google Maps karta</li>
+            <li>moj-profil.php (stranica namijenjena za uređivanje korisničkih podataka)</li>
+            <li>obrada_asinkronih_zahtjeva.php (skripta krcata sa raznim funkcijama za obradu AJAX zahtjeva</li>
+            <li>obrada_csv_datoteke.php (posebna skripta za obradu AJAX zahtjeva za pohranjivanje sadržaja CSV datoteke</li>
+            <li>odjava.php (skripta namijenjena za brisanje sesije - odnosno, za odjavu korisnika</li>
+            <li>prijava.php (stranica namijenjena za prijavu u web-aplikaciju</li>
+            <li>rad-s-podacima.php (rad nad svim podacima u bazi podataka kroz sve tražene načine)</li>
+            <li>registracija.php (stranica namijenjena za izrađivanje novog korisničkog računa)</li>
+            <li>sesija.class.php (skripta namijenjena za rad sa sesijom)</li>
+            <li>statistika.php (nedovršena stranica namijenjena za detaljniji rad sa dnevničkim podacima</li>
+            <li>trenutno_vrijeme.php (skripta za računanje virtualnog vremena na temelju zadanog pomaka</li>
+        </ul>
+        <h2>Popis korištenih tehnologija</h2>
+        <p>PHP, JavaScript, HTML5, CSS3</p>
+        <h2>Popis vanjskih modula</h2>
+        <p>jQuery UI, jQuery framework</p>
+        <a href="index.php">Povratak na početnu stranicu</a>
+    </body>
+</html>
