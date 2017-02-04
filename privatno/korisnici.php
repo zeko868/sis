@@ -65,7 +65,7 @@ for ($i=0;$i<$brojZapisa;$i++) {
     $redak = $skupZapisa->fetch_assoc();
     $prijava = "$naziv_skripte?id=$redak[id]";
     $klasa = $redak['tip']==='N' ? ' class="onemogucen"' : '';
-    echo '<tr$klasa><td>' . htmlspecialchars($redak['email']) . '</td><td>' . htmlspecialchars($redak['lozinka']) . '</td><td>' . htmlspecialchars($redak['tip']) . '</td><td><a href=\"$prijava\">Prijava u sustav</a></td></tr>';
+    echo '<tr$klasa><td>' . htmlspecialchars($redak['email']) . '</td><td>' . htmlspecialchars($redak['lozinka']) . '</td><td>' . htmlspecialchars($redak['tip']) . '</td><td><a href="' . $prijava . '">Prijava u sustav</a></td></tr>';
 }
 echo '</tbody></table>';
 $skupZapisa->close();

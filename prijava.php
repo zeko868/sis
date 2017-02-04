@@ -30,7 +30,7 @@ if (!empty($_POST)) {
                 Sesija::kreirajRelevantnePodatke(array('id' => $redak['id'], 'tip' => $redak['tip'], 'email' => $eadresa, 'ime' => $redak['ime'], 'prezime' => $redak['prezime'], 'vrijeme' => TrenutnoVrijeme(), 'slika' => $redak['link_profilna_slika']));
 
                 if (isset($_POST['zapamtime'])) {
-                    setcookie('korisnik', $eadresa, time() + 60 * 60 * 24 * 3);
+                    setcookie('korisnik', $eadresa, time() + 60 * 60 * 24 * 3, '', '', true, true);
                 } else {
                     if (isset($_COOKIE['korisnik'])) {
                         unset($_COOKIE['korisnik']);
